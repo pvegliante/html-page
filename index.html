@@ -2,12 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Marine Corps</title>
+    <title>Peter Vegliante</title>
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i|Nova+Script|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <a target="_blank" href="http://www.google.com">
-      <h1>Google</h1>
-    </a>
+    <img src="./Supernova.jpg" alt="Supernova">
+    <section>
+      <h1>Peter Vegliante</h1><!-- remove space
+      --><ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <button id="BigRedButton" type="button">Big Red Button</button>
+    </section>
+
+
+    <section id="About" class="purple-title">
+      <h2>About</h2>
+      <hr>
+    </section>
+
+    <section  id="Portfolio" class="purple-title">
+      <h2>Portfolio</h2>
+      <hr>
+
+
+    </section>
+
+    <section id="Resume">
+      <h2>Resume</h2>
+      <hr>
+    </section>
+
+    <section id="Contact">
+      <h2>Contact</h2>
+      <hr>
+    </section>
+
+    <script type="text/javascript">
+    var x = document.querySelectorAll('li a');
+    var redButton = document.getElementById('BigRedButton');
+    redButton.addEventListener('click', function() {
+      console.log(x[0]);
+      x[0].classList.add('yellow-button');
+      x[1].classList.add('yellow-button');
+      x[2].classList.add('yellow-button');
+      x[3].classList.add('yellow-button');
+    });
+    </script>
+
   </body>
 </html>
