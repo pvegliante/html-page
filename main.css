@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+
+}
+
 section:first-of-type img{
     position: absolute;
     z-index: -1;
@@ -36,16 +41,54 @@ section:first-of-type a {color: #fff;}
 
   section#About {
     background-color: #eee;
+
+
   }
+    #gallery{
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #gallery figure {
+      max-width: 200px;
+      display: inline-block;
+
+    }
+    #gallery figure img {
+    width: 100%;
+  }
+
+    #gallery figcaption {
+    text-align: center;
+    }
+
+    #cards {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #cards .card {
+      max-width: 400px;
+    }
+
+    .card img {
+      width: 100%;
+    }
 
   section#Resume img {
     display: inline-block;
-    width: 100px;
+    max-width: 100px;
     height: 100px;
     margin: 5px;
-    margin-left: 50px;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: center;
   }
-  img#aplus {
+  img#resgallery {
     height: 150px;
   }
 
@@ -53,7 +96,7 @@ section:first-of-type a {color: #fff;}
     color: purple;
   }
 
-    button {
+    button#BigRedButton {
       background-color: rgb(255, 0, 0);
       border-radius: 100%;
       position: relative;
@@ -67,17 +110,17 @@ section:first-of-type a {color: #fff;}
       transition: all .3s;
       left: 50%;
       transform: translate(-50%, 300px);
-
-
     }
 
-    button:hover {
+    button#BigRedButton:hover {
       background-color: #fff;
     }
-    button:active {
+
+    button#BigRedButton:active {
       box-shadow: none;
       top: 3px;
     }
+
     form input {
       display: block;
       margin: 10px;
