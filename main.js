@@ -13,7 +13,7 @@ redButton.addEventListener('click', function() {
 var form = $('#form');
 var sendBtn = $('#send-btn');
 
-form.submit(function(event)) {
+form.submit(function(event) {
   event.preventDefault();
 
   $.ajax({
